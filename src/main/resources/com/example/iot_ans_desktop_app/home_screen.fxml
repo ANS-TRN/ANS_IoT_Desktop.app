@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iot_ans_desktop_app.HomeController">
+<VBox prefHeight="1039.0" prefWidth="1363.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iot_ans_desktop_app.HomeController">
    <children>
       <MenuBar VBox.vgrow="NEVER">
          <menus>
@@ -37,17 +46,134 @@
             </Menu>
          </menus>
       </MenuBar>
-      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="1011.0" prefWidth="1360.0" VBox.vgrow="ALWAYS">
          <children>
-            <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj" wrappingWidth="258.193359375">
+            <Text layoutX="45.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj" wrappingWidth="258.193359375">
                <font>
-                  <Font size="33.0" />
+                  <Font name="Arimo Bold" size="59.0" />
                </font>
             </Text>
-            <Label fx:id="currentDateLabel" layoutX="14.0" layoutY="63.0" text="Aktualna_data">
+            <Label fx:id="currentDateLabel" layoutX="45.0" layoutY="80.0" text="Aktualna_data">
                <font>
-                  <Font size="15.0" />
+                  <Font name="Arimo" size="15.0" />
                </font></Label>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="185.0" layoutX="780.0" layoutY="123.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="520.0" />
+            <Group layoutX="61.0" layoutY="120.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="187.0" layoutX="-16.0" layoutY="2.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="582.0" />
+                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="387.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Temp.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="17.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperatura pomieszczenia" textAlignment="CENTER" wrappingWidth="329.193359375">
+                     <font>
+                        <Font name="Arimo" size="34.0" />
+                     </font>
+                  </Text>
+                  <Text id="Temperatura" fill="#4dd31e" layoutX="126.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="35ºC" textAlignment="CENTER" wrappingWidth="111.193359375">
+                     <font>
+                        <Font name="Arimo Bold" size="47.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+            <Group layoutX="967.0" layoutY="108.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="187.0" layoutX="45.0" layoutY="639.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="582.0" />
+            <Group layoutX="54.0" layoutY="385.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="187.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="282.0" />
+                  <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wilgotność względna" textAlignment="CENTER" wrappingWidth="150.0">
+                     <font>
+                        <Font name="Arimo" size="26.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="136.0" fitWidth="138.0" layoutX="142.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Kropla.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="Wilgotnosc_wzgledna" fill="#62afcd" layoutX="33.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="36%" textAlignment="CENTER" wrappingWidth="111.193359375">
+                     <font>
+                        <Font name="Arimo Bold" size="47.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+            <Group layoutX="345.0" layoutY="385.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="187.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="282.0" />
+                  <Text layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wilgotność bezwględna" textAlignment="CENTER" wrappingWidth="150.0">
+                     <font>
+                        <Font name="Arimo" size="26.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="120.0" fitWidth="82.0" layoutX="175.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/img_55948741.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="Wilgotnosc_bezwzgledna" fill="#eb3958" layoutX="11.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8.0 g/m3" textAlignment="CENTER" wrappingWidth="156.193359375">
+                     <font>
+                        <Font name="Arimo Bold" size="38.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+            <Group layoutX="93.0" layoutY="658.0">
+               <children>
+                  <Text layoutX="-1.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Siła sygnału WiFi" textAlignment="CENTER" wrappingWidth="329.193359375">
+                     <font>
+                        <Font name="Arimo" size="34.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="345.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/wifi_analyzer.png" />
+                     </image>
+                  </ImageView>
+                  <Text id="Sygnal" fill="#9d39eb" layoutX="63.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-51 dB" textAlignment="CENTER" wrappingWidth="200.193359375">
+                     <font>
+                        <Font name="Arimo Bold" size="47.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+            <LineChart layoutX="790.0" layoutY="542.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </LineChart>
+            <Group layoutX="977.0" layoutY="118.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="185.0" layoutX="780.0" layoutY="322.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="520.0" />
+            <ImageView fitHeight="116.0" fitWidth="111.0" layoutX="818.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Lightbulb.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="952.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lampa sufitowa" textAlignment="CENTER" wrappingWidth="316.0">
+               <font>
+                  <Font name="Arimo" size="45.0" />
+               </font>
+            </Text>
+            <ToggleButton layoutX="952.0" layoutY="429.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="316.0" text="ON/OFF" />
+            <ImageView fitHeight="116.0" fitWidth="79.0" layoutX="818.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Lightbulb.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="939.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lampka przy biurku" textAlignment="CENTER" wrappingWidth="343.0">
+               <font>
+                  <Font name="Arimo" size="40.0" />
+               </font>
+            </Text>
+            <ToggleButton layoutX="952.0" layoutY="236.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="316.0" text="ON/OFF" />
          </children>
       </AnchorPane>
    </children>
