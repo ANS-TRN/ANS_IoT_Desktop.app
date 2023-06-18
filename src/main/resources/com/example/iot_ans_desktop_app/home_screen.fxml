@@ -71,7 +71,7 @@
                         <Font name="Arimo" size="34.0" />
                      </font>
                   </Text>
-                  <Label layoutX="132.0" layoutY="107.0" text="35ºC" textFill="#4dd31e">
+                  <Label id="Temperatura" layoutX="132.0" layoutY="107.0" text="35ºC" textFill="#4dd31e">
                      <font>
                         <Font name="Arimo Bold" size="45.0" />
                      </font>
@@ -93,7 +93,7 @@
                         <Image url="@image/Kropla.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="46.0" layoutY="108.0" text="46%" textFill="#62afcd">
+                  <Label id="Wilgotnosc_wzgledna" layoutX="46.0" layoutY="108.0" text="46%" textFill="#62afcd">
                      <font>
                         <Font name="Arimo Bold" size="45.0" />
                      </font>
@@ -113,7 +113,7 @@
                         <Image url="@image/img_55948741.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="14.0" layoutY="109.0" text="8.0 g/m3" textFill="#eb3958">
+                  <Label id="Wilgotnosc_bezwzgledna" layoutX="14.0" layoutY="109.0" text="8.0 g/m3" textFill="#eb3958">
                      <font>
                         <Font name="Arimo Bold" size="38.0" />
                      </font>
@@ -132,7 +132,7 @@
                         <Image url="@image/wifi_analyzer.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="103.0" layoutY="75.0" text="-51 dB" textFill="#9d39eb">
+                  <Label id="Sygnal" layoutX="103.0" layoutY="75.0" text="-51 dB" textFill="#9d39eb">
                      <font>
                         <Font name="Arimo Bold" size="47.0" />
                      </font>

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4385e137-3061-4528-a815-cbb471b30b0d" name="Changes" comment="Dodanie Layout'u">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4385e137-3061-4528-a815-cbb471b30b0d" name="Changes" comment="Zmiana elementów na Label">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687108964376</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Zmiana elementów na Label">
+      <created>1687111218834</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687111218834</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +120,7 @@
     <MESSAGE value="master created" />
     <MESSAGE value="com" />
     <MESSAGE value="Dodanie Layout'u" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie Layout'u" />
+    <MESSAGE value="Zmiana elementów na Label" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zmiana elementów na Label" />
   </component>
 </project>
