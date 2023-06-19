@@ -9,28 +9,50 @@ import java.io.IOException;
 
 public class MainApp extends Application {
     private HomeController homeController;
+    private LoginController loginController;
+    private Stage primaryStage;
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("home_screen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1360, 1000);
-        stage.setTitle("Aplikacja_IoT");
-        stage.setScene(scene);
+        primaryStage = stage;
+        FXMLLoader loginLoader = new FXMLLoader(MainApp.class.getResource("login_screen.fxml"));
+        Scene loginScene = new Scene(loginLoader.load(), 700, 500);
+        stage.setTitle("Logowanie");
+        stage.setScene(loginScene);
         stage.show();
 
-        homeController = fxmlLoader.getController();
+        loginController = loginLoader.getController();
+        loginController.setMainApp(this);
+    }
 
-        // Pobierz dane z ESP32 - Wilgotność
-        SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wilgotnosc_1", homeController.getWilgotnoscWzglednaLabel());
+    public void showHomeScreen() {
+        try {
+            FXMLLoader homeLoader = new FXMLLoader(MainApp.class.getResource("home_screen.fxml"));
+            Scene scene = new Scene(homeLoader.load(), 1350, 900);
+            Stage stage = new Stage();
+            stage.setTitle("Aplikacja_IoT");
+            stage.setScene(scene);
+            stage.show();
 
-        // Pobierz dane z ESP32 - Temperatura
-        SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_temperatura_1", homeController.getTemperaturaLabel());
+            // Zamknij scenę logowania
+            primaryStage.close();
 
-        // Pobierz dane z ESP32 - WiFi
-        SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wifi_signal_1", homeController.getSygnalLabel());
+            homeController = homeLoader.getController();
+            // Pobierz dane z ESP32 - Wilgotność
+            SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wilgotnosc_1", homeController.getWilgotnoscWzglednaLabel());
 
-        // Pobierz dane z ESP32 - Wilgotność bezwzględna
-        SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wilgotnosc_bezwzgledna_1", homeController.getWilgotnoscBezwzglednaLabel());
+            // Pobierz dane z ESP32 - Temperatura
+            SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_temperatura_1", homeController.getTemperaturaLabel());
+
+            // Pobierz dane z ESP32 - WiFi
+            SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wifi_signal_1", homeController.getSygnalLabel());
+
+            // Pobierz dane z ESP32 - Wilgotność bezwzględna
+            SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wilgotnosc_bezwzgledna_1", homeController.getWilgotnoscBezwzglednaLabel());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
