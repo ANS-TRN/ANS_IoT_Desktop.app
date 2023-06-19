@@ -4,13 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4385e137-3061-4528-a815-cbb471b30b0d" name="Changes" comment="Zmiana elementów na Label">
+    <list default="true" id="4385e137-3061-4528-a815-cbb471b30b0d" name="Changes" comment="Utworzenie Połączenia z urządeniem">
+      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/DeviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/Esp32Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/device_screen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/style_device.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/style_main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/Connection_ESP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/Connection_ESP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -29,27 +50,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/git/ANS_IoT_Desktop.app/src/main/resources/com/example/iot_ans_desktop_app/image&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/git/ANS_IoT_Desktop.app/src/main/resources/com/example/iot_ans_desktop_app/image",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\git\ANS_IoT_Desktop.app\src\main\resources\com\example\iot_ans_desktop_app\image" />
@@ -115,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687111218834</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Utworzenie Połączenia z urządeniem">
+      <created>1687179249469</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687179249469</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +166,7 @@
     <MESSAGE value="com" />
     <MESSAGE value="Dodanie Layout'u" />
     <MESSAGE value="Zmiana elementów na Label" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmiana elementów na Label" />
+    <MESSAGE value="Utworzenie Połączenia z urządeniem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utworzenie Połączenia z urządeniem" />
   </component>
 </project>

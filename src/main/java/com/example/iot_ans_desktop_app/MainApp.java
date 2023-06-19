@@ -12,13 +12,13 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("home_screen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1360, 1000);
+        FXMLLoader homeLoader = new FXMLLoader(MainApp.class.getResource("home_screen.fxml"));
+        Scene scene = new Scene(homeLoader.load(), 1350, 900);
         stage.setTitle("Aplikacja_IoT");
         stage.setScene(scene);
         stage.show();
 
-        homeController = fxmlLoader.getController();
+        homeController = homeLoader.getController();
 
         // Pobierz dane z ESP32 - Wilgotność
         SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wilgotnosc_1", homeController.getWilgotnoscWzglednaLabel());
@@ -31,6 +31,7 @@ public class MainApp extends Application {
 
         // Pobierz dane z ESP32 - Wilgotność bezwzględna
         SensorDataFetcher.fetchSensorData("https://ha.salonar.pl/api/states/sensor.iot_esp_ans_wilgotnosc_bezwzgledna_1", homeController.getWilgotnoscBezwzglednaLabel());
+
     }
 
     public static void main(String[] args) {

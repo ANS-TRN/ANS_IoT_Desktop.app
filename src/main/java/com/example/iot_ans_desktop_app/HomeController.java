@@ -1,5 +1,6 @@
 package com.example.iot_ans_desktop_app;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import java.text.DateFormat;
@@ -8,6 +9,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import java.io.IOException;
+
 public class HomeController implements Initializable {
     @FXML
     private Label currentDateLabel;
@@ -52,4 +57,18 @@ public class HomeController implements Initializable {
     public Label getWilgotnoscBezwzglednaLabel() {
         return wilgotnoscBezwzglednaLabel;
     }
+    @FXML
+    private void openDeviceWindow() {
+        try {
+            FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("device_screen.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Zarządzenie urządzeniem");
+            stage.setScene(new Scene(loader.load(), 400, 300));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

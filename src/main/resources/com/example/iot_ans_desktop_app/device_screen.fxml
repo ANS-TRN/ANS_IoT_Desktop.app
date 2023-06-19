@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="300.0" prefWidth="400.0" styleClass="backgroundColor" stylesheets="@../../../style_device.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iot_ans_desktop_app.DeviceController">
+    <children>
+
+        <Button fx:id="toggleButton" layoutX="119.0" layoutY="129.0" mnemonicParsing="false" onAction="#handleToggleButtonAction" prefHeight="49.0" prefWidth="160.0" text="Włącz">
+         <font>
+            <Font name="Gadugi Bold" size="17.0" />
+         </font></Button>
+        <Label fx:id="deviceStatusLabel" alignment="CENTER" layoutX="101.0" layoutY="214.0" prefHeight="42.0" prefWidth="206.0" text="Urządzenie jest wyłączone">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Text layoutX="142.0" layoutY="206.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Stan urządzenia" textAlignment="CENTER" wrappingWidth="115.689453125">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="70.0" fitWidth="51.0" layoutX="176.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Lightbulb.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

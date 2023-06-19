@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -23,22 +18,6 @@
    <children>
       <MenuBar VBox.vgrow="NEVER">
          <menus>
-            <Menu mnemonicParsing="false" text="File">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="New" />
-                  <MenuItem mnemonicParsing="false" text="Open…" />
-                  <Menu mnemonicParsing="false" text="Open Recent" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
-                  <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Save As…" />
-                  <MenuItem mnemonicParsing="false" text="Revert" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Preferences…" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Quit" />
-               </items>
-            </Menu>
             <Menu mnemonicParsing="false" text="Informacje">
                <items>
                   <MenuItem mnemonicParsing="false" text="Autorzy" />
@@ -46,18 +25,18 @@
             </Menu>
          </menus>
       </MenuBar>
-      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="1011.0" prefWidth="1360.0" VBox.vgrow="ALWAYS">
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="1011.0" prefWidth="1360.0" styleClass="backgroundColor" stylesheets="@../../../style_main.css" VBox.vgrow="ALWAYS">
          <children>
             <Text layoutX="45.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj" wrappingWidth="258.193359375">
                <font>
-                  <Font name="Arimo Bold" size="59.0" />
+                  <Font name="System Bold" size="60.0" />
                </font>
             </Text>
-            <Label fx:id="currentDateLabel" layoutX="45.0" layoutY="80.0" text="Aktualna_data">
+            <Label fx:id="currentDateLabel" layoutX="45.0" layoutY="80.0" prefHeight="25.0" prefWidth="258.0" text="Aktualna_data">
                <font>
-                  <Font name="Arimo" size="15.0" />
+                  <Font name="System Bold" size="16.0" />
                </font></Label>
-            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="185.0" layoutX="780.0" layoutY="123.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="520.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="185.0" layoutX="754.0" layoutY="274.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="520.0" />
             <Group layoutX="61.0" layoutY="120.0">
                <children>
                   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="187.0" layoutX="-16.0" layoutY="2.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="582.0" />
@@ -68,12 +47,12 @@
                   </ImageView>
                   <Text layoutX="17.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperatura pomieszczenia" textAlignment="CENTER" wrappingWidth="329.193359375">
                      <font>
-                        <Font name="Arimo" size="34.0" />
+                        <Font name="System Bold" size="34.0" />
                      </font>
                   </Text>
                   <Label fx:id="temperaturaLabel" layoutX="132.0" layoutY="107.0" text="35ºC" textFill="#4dd31e">
                      <font>
-                        <Font name="Arimo Bold" size="45.0" />
+                        <Font name="System Bold" size="45.0" />
                      </font>
                   </Label>
                </children>
@@ -85,7 +64,7 @@
                   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="187.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="282.0" />
                   <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wilgotność względna" textAlignment="CENTER" wrappingWidth="150.0">
                      <font>
-                        <Font name="Arimo" size="26.0" />
+                        <Font name="System Bold" size="26.0" />
                      </font>
                   </Text>
                   <ImageView fitHeight="136.0" fitWidth="138.0" layoutX="142.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
@@ -93,9 +72,9 @@
                         <Image url="@image/Kropla.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="wilgotnoscWzglednaLabel" layoutX="46.0" layoutY="108.0" text="46%" textFill="#62afcd">
+                  <Label fx:id="wilgotnoscWzglednaLabel" layoutX="37.0" layoutY="107.0" prefHeight="67.0" prefWidth="117.0" text="46%" textFill="#62afcd">
                      <font>
-                        <Font name="Arimo Bold" size="45.0" />
+                        <Font name="System Bold" size="45.0" />
                      </font>
                   </Label>
                </children>
@@ -105,7 +84,7 @@
                   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="187.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="282.0" />
                   <Text layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wilgotność bezwględna" textAlignment="CENTER" wrappingWidth="150.0">
                      <font>
-                        <Font name="Arimo" size="26.0" />
+                        <Font name="System Bold" size="26.0" />
                      </font>
                   </Text>
                   <ImageView fitHeight="120.0" fitWidth="82.0" layoutX="175.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
@@ -115,7 +94,7 @@
                   </ImageView>
                   <Label fx:id="wilgotnoscBezwzglednaLabel" layoutX="14.0" layoutY="109.0" text="8.0 g/m3" textFill="#eb3958">
                      <font>
-                        <Font name="Arimo Bold" size="38.0" />
+                        <Font name="System Bold" size="38.0" />
                      </font>
                   </Label>
                </children>
@@ -124,7 +103,7 @@
                <children>
                   <Text id="ch" layoutX="-1.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Siła sygnału WiFi" textAlignment="CENTER" wrappingWidth="329.193359375">
                      <font>
-                        <Font name="Arimo" size="34.0" />
+                        <Font name="System Bold" size="34.0" />
                      </font>
                   </Text>
                   <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="345.0" pickOnBounds="true" preserveRatio="true">
@@ -134,46 +113,35 @@
                   </ImageView>
                   <Label fx:id="sygnalLabel" layoutX="103.0" layoutY="75.0" text="-51 dB" textFill="#9d39eb">
                      <font>
-                        <Font name="Arimo Bold" size="47.0" />
+                        <Font name="System Bold" size="47.0" />
                      </font>
                   </Label>
                </children>
             </Group>
-            <LineChart id="ch" layoutX="790.0" layoutY="542.0">
-              <xAxis>
-                <CategoryAxis side="BOTTOM" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis side="LEFT" />
-              </yAxis>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-            </LineChart>
             <Group layoutX="977.0" layoutY="118.0" />
-            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="185.0" layoutX="780.0" layoutY="322.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="520.0" />
-            <ImageView fitHeight="116.0" fitWidth="111.0" layoutX="818.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e9e9e9" height="185.0" layoutX="754.0" layoutY="535.0" stroke="#e4e4e4" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="520.0" />
+            <ImageView fitHeight="116.0" fitWidth="111.0" layoutX="788.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@image/Lightbulb.png" />
                </image>
             </ImageView>
-            <Text layoutX="952.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lampa sufitowa" textAlignment="CENTER" wrappingWidth="316.0">
+            <Text layoutX="897.0" layoutY="613.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lampa sufitowa" textAlignment="CENTER" wrappingWidth="316.0">
                <font>
-                  <Font name="Arimo" size="45.0" />
+                  <Font name="System Bold" size="40.0" />
                </font>
             </Text>
-            <ToggleButton layoutX="952.0" layoutY="429.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="316.0" text="ON/OFF" />
-            <ImageView fitHeight="116.0" fitWidth="79.0" layoutX="818.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+            <Button id="yellow" layoutX="912.0" layoutY="385.0" mnemonicParsing="false" onAction="#openDeviceWindow" prefHeight="50.0" prefWidth="316.0" stylesheets="@../../../buttons.css" text="Zarządzaj urządzeniem" />
+            <ImageView fitHeight="116.0" fitWidth="79.0" layoutX="796.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@image/Lightbulb.png" />
                </image>
             </ImageView>
-            <Text layoutX="939.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lampka przy biurku" textAlignment="CENTER" wrappingWidth="343.0">
+            <Text layoutX="882.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lampka " textAlignment="CENTER" wrappingWidth="377.0">
                <font>
-                  <Font name="Arimo" size="40.0" />
+                  <Font name="System Bold" size="40.0" />
                </font>
             </Text>
-            <ToggleButton layoutX="952.0" layoutY="236.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="316.0" text="ON/OFF" />
+            <Button id="yellow" layoutX="897.0" layoutY="639.0" mnemonicParsing="false" onAction="#openDeviceWindow" prefHeight="50.0" prefWidth="316.0" stylesheets="@../../../buttons.css" text="Zarządzaj urządzeniem" />
          </children>
       </AnchorPane>
    </children>

@@ -2,7 +2,6 @@ package com.example.iot_ans_desktop_app;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
