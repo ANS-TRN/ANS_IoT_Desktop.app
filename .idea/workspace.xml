@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4385e137-3061-4528-a815-cbb471b30b0d" name="Changes" comment="Utworzenie Połączenia z urządeniem">
-      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/DeviceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/Esp32Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/buttons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/device_screen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/style_device.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/style_main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/login_screen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/Connection_ESP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/Connection_ESP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/buttons.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +52,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/git/ANS_IoT_Desktop.app/src/main/resources/com/example/iot_ans_desktop_app/image",
+    "last_directory_selection": "C:/Users/Marcin/Desktop/Projekt IoT/ANS_IoT_Desktop.app/src/main/java/com/example/iot_ans_desktop_app",
+    "last_opened_file_path": "C:/Users/Marcin/.m2/repository/com/squareup/retrofit/retrofit/1.9.0/retrofit-1.9.0.jar",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -68,7 +61,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.44942528",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -108,6 +101,7 @@
       <workItem from="1687093422244" duration="530000" />
       <workItem from="1687113444254" duration="301000" />
       <workItem from="1687172441364" duration="4997000" />
+      <workItem from="1687197387699" duration="5849000" />
     </task>
     <task id="LOCAL-00001" summary="master created">
       <created>1687093552014</created>
