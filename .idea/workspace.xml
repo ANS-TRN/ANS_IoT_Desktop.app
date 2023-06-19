@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4385e137-3061-4528-a815-cbb471b30b0d" name="Changes" comment="Zmiana elementów na Label">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/DataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/DataProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/SensorDataFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/iot_ans_desktop_app/SensorDataFetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/iot_ans_desktop_app/home_screen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
