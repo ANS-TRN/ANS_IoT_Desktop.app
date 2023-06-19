@@ -32,7 +32,6 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        // TODO: Sprawdź poprawność danych logowania
         boolean loginSuccessful = performLogin(username, password);
 
         if (loginSuccessful) {
@@ -44,11 +43,7 @@ public class LoginController {
     }
 
     private boolean performLogin(String username, String password) {
-        // TODO: Implementacja logiki logowania
-        // Sprawdź poprawność danych logowania
-        // Zwróć true, jeśli logowanie było udane, false w przeciwnym razie
-
-        // Przykładowa implementacja:
         return username.equals("admin") && password.equals("admin");
+
     }
 }

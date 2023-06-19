@@ -10,9 +10,11 @@ import java.io.IOException;
 public class MainApp extends Application {
     private HomeController homeController;
     private LoginController loginController;
+    private Stage primaryStage;
 
     @Override
     public void start(Stage stage) throws IOException {
+        primaryStage = stage;
         FXMLLoader loginLoader = new FXMLLoader(MainApp.class.getResource("login_screen.fxml"));
         Scene loginScene = new Scene(loginLoader.load(), 700, 500);
         stage.setTitle("Logowanie");
@@ -31,6 +33,9 @@ public class MainApp extends Application {
             stage.setTitle("Aplikacja_IoT");
             stage.setScene(scene);
             stage.show();
+
+            // Zamknij scenę logowania
+            primaryStage.close();
 
             homeController = homeLoader.getController();
             // Pobierz dane z ESP32 - Wilgotność
